@@ -9,6 +9,28 @@
     --hover-color : #cf711f;
 
 }
+*:focus {
+    outline: none;
+
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
+}
 
 *{
     font-family: 'Roboto Slab', serif;
@@ -85,7 +107,7 @@ header {
     font-weight: 500;
 }
 .nav-try:hover{
-    color: var(--text-color);
+    
     cursor: pointer;
     background-color: var(--hover-color);
     transition: all .3s ease;
@@ -128,7 +150,7 @@ header {
     
 }
 .hero-img-box img{
-
+   
 
 }
 
@@ -270,7 +292,7 @@ header {
     line-height: 1.8;
 }
 .step-img{
-    width: 35%;
+    width: 25%;
     z-index: 10;
 }
 .step-img-box{
@@ -279,6 +301,127 @@ header {
     justify-content: center;
     align-items: center;
 }
+.step-img-box::before {
+    width: 60%;
+    /* height: 60%; */
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+    
+     
+}
+.step-img-box::before, .step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .step-img-box::before,
+.step-img-box::after{
+    background-color: #cf711f;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+} */
+
+
+.section-meals{
+    padding: 9.6rem 0;
+}
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    text-align: center;
+}
+.meal-img{
+    width: 100%;
+}
+.meal-attributes{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding-bottom: 4rem;
+    align-items: center;
+    text-align: center;
+}
+.meal-attribute{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+}
+.meal-content{
+   padding: 1.2rem 4.8rem 0.8rem 0.8rem;
+   text-align: center;
+}
+.meal-tag{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+.meal-tags{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+.meal-tilte{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    color: #333333;
+    border-radius:100px;
+    font-weight: 600;
+}
+.tag--vegetarian{
+    background-color: #51cf66;
+}
+
+.tag--vegan{
+    background-color: #94d82d;
+}
+.tag--paleo{
+    background-color: #ffd43b;
+}
+
+.diets-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.diets-img{
+    color: #E67E22;
+}
+.list-item{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    line-height: 1.2;
+    color: #333;
+    
+}
+
+
+
 
 
 
@@ -386,7 +529,7 @@ header {
     }
 
     .cta {
-      /* 3/5 = 60% + 2/5 = 40% */
+    
     grid-template-columns: 3fr 2fr;
     }
 
@@ -398,7 +541,7 @@ header {
     margin-top: 1.2rem;
     }
 
-    /* MOBILE NAVIGATION */
+
     .btn-mobile-nav {
     display: block;
     z-index: 9999;
