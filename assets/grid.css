@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    column-gap: 6.4rem;
+    column-gap: 7.4rem;
     row-gap: 9.6rem;
 }
 .grid:not(:last-child) {
